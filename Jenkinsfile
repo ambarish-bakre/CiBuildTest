@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        archiveArtifacts 'C#/WindowsFormsApp/WindowsFormsApp/bin/release/**'
+        archiveArtifacts 'C#/WindowsFormsApp/WindowsFormsApp/bin/Debug/*.exe'
       }
     }
   }
