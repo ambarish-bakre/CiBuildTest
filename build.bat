@@ -10,3 +10,5 @@ msbuild Node\ExpressApp\ExpressApp.sln
 msbuild Node\NodejsConsoleApp\NodejsConsoleApp.sln
 msbuild Wix\SetupProject\SetupProject.sln
 devenv.com Setup\Setup\Setup.sln /Build
+
+set
