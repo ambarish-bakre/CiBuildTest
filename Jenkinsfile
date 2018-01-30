@@ -5,7 +5,7 @@ pipeline {
       steps {
         bat './build.bat'
         script {
-          currentBuild.description = "${GIT_BRANCH}.${BUILD_NUMBER}"
+          currentBuild.displayName = "${GIT_BRANCH}.${BUILD_NUMBER}"
         }
       }
     }
