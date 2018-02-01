@@ -1,0 +1,16 @@
+{
+  "name": "version-info",
+  "version": "4.5.5",
+  "description": "gulp tasks to set version number from build server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-replace": "^0.6.1"
+  }
+}

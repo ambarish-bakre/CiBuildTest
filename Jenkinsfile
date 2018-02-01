@@ -3,10 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        bat './versionbump.bat'
         bat './build.bat'
-        script {
-          currentBuild.displayName = "${GIT_BRANCH}.${BUILD_NUMBER}"
-        }
       }
     }
     stage('Archive') {

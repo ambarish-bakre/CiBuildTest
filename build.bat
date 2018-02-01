@@ -1,4 +1,3 @@
-
 set VSCMD_START_DIR=%cd%
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsDevCmd.bat"
 
@@ -9,6 +8,8 @@ msbuild C++\WindowsProject\WindowsProject.sln
 msbuild Node\ExpressApp\ExpressApp.sln
 msbuild Node\NodejsConsoleApp\NodejsConsoleApp.sln
 msbuild Wix\SetupProject\SetupProject.sln
+msbuild VB\WindowsApp\WindowsApp.sln
+
+@REM workaround to build vdproj
 devenv.com Setup\Setup\Setup.sln /Build
 
-set
