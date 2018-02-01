@@ -3,12 +3,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        bat './versionbump.bat'
         bat './build.bat'
       }
     }
     stage('Archive') {
       steps {
-        archiveArtifacts 'C#/WindowsFormsApp/WindowsFormsApp/bin/release/**'
+        archiveArtifacts '**/bin/**/*.exe'
+        archiveArtifacts '**/*.msi'
       }
     }
   }
