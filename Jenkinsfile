@@ -9,7 +9,8 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        archiveArtifacts '**/**/**/bin/Debug/*.exe'
+        archiveArtifacts '**/*.exe'
+        archiveArtifacts '**/*.msi'
       }
     }
   }
