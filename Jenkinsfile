@@ -1,5 +1,8 @@
 pipeline {
-  agent any
+  agent node {
+    label ''
+    customWorkspace 'C:/workspace/${BRANCH_NAME}'
+  }
   stages {
     stage('Build') {
       steps {
