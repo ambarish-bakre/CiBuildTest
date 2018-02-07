@@ -1,7 +1,9 @@
 pipeline {
-  agent node {
-    label 'master'
-    customWorkspace 'C:/workspace/${BRANCH_NAME}'
+  agent {
+    node {
+        label 'master'
+        customWorkspace 'C:/Jenkins/${JOB_BASE_NAME}'
+    }
   }
   stages {
     stage('Build') {
