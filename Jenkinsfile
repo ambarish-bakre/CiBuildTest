@@ -1,6 +1,6 @@
 pipeline {
   agent node {
-    label ''
+    label 'master'
     customWorkspace 'C:/workspace/${BRANCH_NAME}'
   }
   stages {
